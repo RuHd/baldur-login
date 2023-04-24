@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Uncial+Antiqua&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+body {
+  background-color: #633C23;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: white;
+  font-size: 3em;
+  font-family: 'Uncial Antiqua', cursive;
+  border-bottom: 1 solid red;
+}
+
+label {
+  color: white;
+  font-size: 1.5em;
+}
+
+input {
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.btn span {
+  position: absolute;
+  left: 20px;
+  bottom: 8px;
+  font-size: 1.5em;
+  z-index: 20;
+  transition: .5s;
+  
+}
+

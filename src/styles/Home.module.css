@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: url("../tavern.jpg") ;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 5px 5px 10px black;
+  width: 1000px;
+  height: 530px;
+}
+
+.login {
+  padding: 15px;
+  border: 2px dashed white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  
+}
+
+.firstLetterTitle {
+    font-size: 2.1em;
+    color: rgb(156, 48, 48);
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn:hover span {
+  left: 50px;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.btn:hover::before {
+  width: 20px;
+}
+
+.btn {
+  position: relative;
+  background-color: white;
+  padding: 10px 0;
+  width: 150px;
+  height: 40px;
+  transition: 1s;
+  z-index: 100;
+  
+}
+
+.btnTitle {
+  position: absolute;
+  left: 20px;
+  bottom: 8px;
+  font-size: 1.5em;
+  z-index: 20;
+  transition: .5s;
+  
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  left: 0;
+  bottom: 0;
+  background-color: rgb(228, 206, 7);
+  transition: .5s;
+  z-index: -10;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0px;
+  left: 15px;
+  bottom: 18px;
+  background-color: black;
+  transition: .5s;
+  z-index: 10;
+}
+
